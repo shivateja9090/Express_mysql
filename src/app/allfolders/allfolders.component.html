@@ -1,0 +1,16 @@
+<div class="main">
+  <h1>folders to view</h1>
+</div>
+<div class="folders" *ngFor="let item of res1">
+  <button (click)="foldersclick(item)">{{ item }}</button>
+</div>
+<div class="subfolders_keys" *ngIf="subfolders_keys">
+  <ng-container *ngFor="let subfolder of subfolders_keys">
+    <button (click)="subfoldersclick(subfolder)">{{ subfolder }}</button>
+  </ng-container>
+</div>
+<div class="subfolders_values" *ngIf="subfolders_values">
+  <ng-container *ngFor="let subfolder of subfolders_values">
+    <h1>{{ subfolder }}</h1>
+  </ng-container>
+</div>
