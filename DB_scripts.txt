@@ -1,0 +1,58 @@
+
+create database expressfolders
+
+
+create table spring_boot(
+   Id INT NOT NULL AUTO_INCREMENT,
+     src_folder VARCHAR(100) NOT NULL,
+    routes VARCHAR(40) NOT NULL,
+     controllers VARCHAR(40) NOT NULL ,
+   PRIMARY KEY ( Id )
+ );
+
+
+ create table angular(
+   Id INT NOT NULL AUTO_INCREMENT,
+     src_folder VARCHAR(100) NOT NULL,
+    components VARCHAR(40) NOT NULL,
+     modules VARCHAR(40) NOT NULL ,
+   PRIMARY KEY ( Id )
+ );
+
+  create table react(
+   Id INT NOT NULL AUTO_INCREMENT,
+     src_folder VARCHAR(100) NOT NULL,
+    components VARCHAR(40) NOT NULL,
+     modules VARCHAR(40) NOT NULL ,
+      directives VARCHAR(40) NOT NULL ,
+      test_files VARCHAR(40) NOT NULL ,
+   PRIMARY KEY ( Id )
+ );
+
+
+
+INSERT INTO spring_boot (Id,src_folder,routes,controllers) VALUES (1, 'main', 'r1', 'c1');
+INSERT INTO spring_boot (Id,src_folder,routes,controllers) VALUES (2, 'main1', 'r2', 'c2');
+INSERT INTO spring_boot (Id,src_folder,routes,controllers) VALUES (3, 'main2', 'r3', 'c3');
+INSERT INTO spring_boot (Id,src_folder,routes,controllers) VALUES (4, 'main3', 'r4', 'c4');
+INSERT INTO spring_boot (Id,src_folder,routes,controllers) VALUES (5, 'main4', 'r5', 'c5');
+INSERT INTO spring_boot (Id,src_folder,routes,controllers) VALUES (6, 'main5', 'r6', 'c6');
+
+
+INSERT INTO angular (Id,src_folder,components,modules) VALUES (1, 's1', 'c1', 'm1');
+INSERT INTO angular (Id,src_folder,components,modules) VALUES (2, 's2', 'c2', 'm2');
+INSERT INTO angular (Id,src_folder,components,modules) VALUES (3, 's3', 'c3', 'm3');
+INSERT INTO angular (Id,src_folder,components,modules) VALUES (4, 's4', 'c4', 'm4');
+INSERT INTO angular (Id,src_folder,components,modules) VALUES (5, 's5', 'c5', 'm5');
+INSERT INTO angular (Id,src_folder,components,modules) VALUES (6, 's6', 'c6', 'm6');
+
+
+
+
+INSERT INTO react (src_folder,components,modules,directives,test_files) VALUES ('s1', 'c1', 'm1','d1','t1');
+INSERT INTO react (src_folder,components,modules,directives,test_files) VALUES ('s2', 'c2', 'm2','d2','t2');
+INSERT INTO react (src_folder,components,modules,directives,test_files) VALUES ('s3', 'c3', 'm3','d3','t3');
+INSERT INTO react (src_folder,components,modules,directives,test_files) VALUES ('s4', 'c4', 'm4','d4','t4');
+INSERT INTO react (src_folder,components,modules,directives,test_files) VALUES ('s5', 'c5', 'm5','d5','t5');
+INSERT INTO react (src_folder,components,modules,directives,test_files) VALUES ('s6', 'c6', 'm6','d6','t6');
+
